@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac410a916bf8004ab088449a7bfe3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   mainCamera: {fileID: 519420031}
 --- !u!212 &1134453383
 SpriteRenderer:
