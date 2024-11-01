@@ -918,7 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  steerSpeed: 200
+  mainCamera: {fileID: 519420031}
 --- !u!212 &1134453383
 SpriteRenderer:
   m_ObjectHideFlags: 0
