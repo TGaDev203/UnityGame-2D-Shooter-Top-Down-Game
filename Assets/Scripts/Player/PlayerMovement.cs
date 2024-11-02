@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //! Component
     [SerializeField] private float moveSpeed;
     [SerializeField] private Camera mainCamera;
 
@@ -10,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 lastMousePos;
 
     private void Awake()
+    {
+        InitializeComponents();
+    }
+
+    private void InitializeComponents()
     {
         playerRigidbody2D = GetComponent<Rigidbody2D>();
     }
@@ -26,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         RotatePlayer();
     }
 
+    //! Handle Movement
     private void UpdateMovementInput()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -56,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    //! Check State
     private void CheckStartGame()
     {
         if (Input.GetKeyDown(KeyCode.Space))
